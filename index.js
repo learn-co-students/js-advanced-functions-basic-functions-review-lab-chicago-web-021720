@@ -19,8 +19,6 @@ const Calculator = {
 }
 
 function actionApplyer(start, funcs) {
-    funcs.forEach(fn => {
-        start = fn(start);
-    });
+    funcs.forEach(fn => start = fn(start));
     return start;
 }
